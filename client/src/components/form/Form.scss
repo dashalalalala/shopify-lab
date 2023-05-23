@@ -1,0 +1,47 @@
+.form {
+	display: flex;
+	position: absolute;
+	padding: 1rem 2rem;
+	margin: 5rem 2rem;
+	background-color: white;
+	flex-direction: column;
+	font-family: sans-serif;
+	max-width: 45%;
+	border-radius: 4px;
+	background-color: #1d1e1e;
+	align-items: center;
+	// width: 40vh;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 2rem;
+	background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: 1rem;
+}
+
+.text {
+	color: white;
+	padding: 0.5rem;
+}
+
+.button {
+	background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
+	color: #1d1e1e;
+	padding: 0.5rem 2rem;
+	margin: 1rem;
+	border-radius: 4px;
+	font-weight: 700;
+}
+
+.link {
+	font-weight: 700;
+	background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
