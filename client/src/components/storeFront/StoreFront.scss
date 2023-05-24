@@ -1,0 +1,25 @@
+.wrapper {
+	background-image: url("../../assets/images/store-front.jpeg");
+	// background-image: url("../../assets/images/store-view-mockup-2-clean.jpg");
+	background-size: cover;
+	// background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	z-index: -1;
+}
+
+.placeholder {
+	position: absolute;
+	width: 21rem;
+	height: auto;
+	// left: 50%;
+	// top: 50%;
+	left: 71%;
+	top: 48%;
+	mix-blend-mode: multiply;
+
+	&__logo {
+		filter: opacity(0.9);
+	}
+}
