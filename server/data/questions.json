@@ -1,0 +1,44 @@
+[
+  {
+    "questionText": "As a manager, you've noticed that one of your team members, who used to be highly productive, has been under-performing and seems less engaged over the past few weeks. How would you handle this situation?",
+    "answerOptions": [
+      {
+        "answerText": "Ignore the situation and hope the employee's performance improves on its own.",
+        "isCorrect": false
+      },
+      {
+        "answerText": "Speak privately with the employee, expressing your concern about their performance and asking if there's anything they'd like to discuss or any support they need.",
+        "isCorrect": true
+      },
+      {
+        "answerText": "Immediately issue a formal warning to the employee about their underperformance.",
+        "isCorrect": false
+      },
+      {
+        "answerText": "Publicly call out the employee during a team meeting for not meeting performance standards.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "As a manager, you've noticed that one of your team members, who used to be highly productive, has been underperforming and seems less engaged over the past few weeks. How would you handle this situation?",
+    "answerOptions": [
+      {
+        "answerText": "Ignore the situation and hope the employee's performance improves on its own.",
+        "isCorrect": false
+      },
+      {
+        "answerText": "Speak privately with the employee, expressing your concern about their performance and asking if there's anything they'd like to discuss or any support they need.",
+        "isCorrect": true
+      },
+      {
+        "answerText": "Immediately issue a formal warning to the employee about their underperformance.",
+        "isCorrect": false
+      },
+      {
+        "answerText": "Publicly call out the employee during a team meeting for not meeting performance standards.",
+        "isCorrect": false
+      }
+    ]
+  }
+]
