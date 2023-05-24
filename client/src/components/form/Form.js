@@ -8,7 +8,7 @@ const PageOne = () => {
 
 	return (
 		<div>
-			<h1 className="title">Welcome to Shopify Interactive Learning!</h1>
+			<h1 className="title">Welcome to Shopify Interactive Learning Lab!</h1>
 			<p className="text">
 				Shopify Interactive Learning Forum is the place where you can
 				experiment, make mistakes, and learn in a risk-free, simulated

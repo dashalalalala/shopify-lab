@@ -1,16 +1,21 @@
 .form {
 	display: flex;
 	position: absolute;
-	padding: 1rem 2rem;
-	margin: 5rem 2rem;
+	padding: 2rem 3rem;
+	margin: 12rem 6rem;
 	background-color: white;
 	flex-direction: column;
 	font-family: sans-serif;
-	max-width: 45%;
-	border-radius: 4px;
+	max-width: 58%;
+	height: 36rem;
+	border-radius: 100px;
 	background-color: #1d1e1e;
+	// background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
 	align-items: center;
-	// width: 40vh;
+	justify-content: center;
+	gap: 2rem;
+	box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+	opacity: 95%;
 }
 
 .title {
@@ -43,5 +48,5 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-  cursor: pointer;
+	cursor: pointer;
 }
