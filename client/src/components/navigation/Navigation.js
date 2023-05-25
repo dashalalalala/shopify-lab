@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import Guide from "../../components/Guide/Guide";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Navigation.scss";

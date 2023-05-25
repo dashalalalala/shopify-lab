@@ -1,18 +1,17 @@
 .navigation-box {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(2, 25vw);
 	gap: 1rem;
 }
 
 .navigation-text {
-	padding: 2rem 3rem;
+	padding: 3rem 4rem;
 	font-weight: bold;
 	background: #79dfff;
-	border-radius: 4px;
+	border-radius: 10px;
 
 	&:hover {
 		background: #4bfe85;
-    cursor: pointer;
+		cursor: pointer;
 	}
 }

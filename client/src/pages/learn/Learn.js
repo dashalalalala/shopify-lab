@@ -1,5 +1,4 @@
 import MultiPageForm from "../../components/form/Form";
-import StoreFront from "../../components/storeFront/StoreFront";
 import "./Learn.scss";
 import { FormProvider } from "../../context/FormContext";
 import { useState, useEffect } from "react";
@@ -24,7 +23,6 @@ function Learn() {
 		<FormProvider>
 			<div className="learn-page">
 				<MultiPageForm />
-				{/* <StoreFront userData={userData} /> */}
 			</div>
 		</FormProvider>
 	);
