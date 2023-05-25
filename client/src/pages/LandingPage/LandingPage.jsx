@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FormDataContext } from "../../context/FormContext";
 
-export default function PageOne() {
+export default function LandingPage() {
     const [formData, setFormData] = useContext(FormDataContext);
 
 	return (

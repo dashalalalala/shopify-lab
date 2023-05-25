@@ -2,7 +2,7 @@ import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Learn from "./pages/learn/Learn";
-import PageFour from "./pages/PageFour/PageFour";
+import Guide from './components/Guide/Guide'
 
 function App() {
 	return (
@@ -11,7 +11,7 @@ function App() {
 				<BrowserRouter>
 					<Routes>
 						<Route path="/" element={<Learn />} />
-						{/* <Route path="/quiz" element={<PageFour />} /> */}
+						<Route path="/guide" element={<Guide />} />
 					</Routes>
 				</BrowserRouter>
 			</div>

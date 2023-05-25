@@ -101,6 +101,7 @@ export default function PageFour() {
       
 
 console.log(formData);
+
     const buttonReset = () => {
         navigate("/quiz");
     };

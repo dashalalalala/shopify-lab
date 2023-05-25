@@ -1,17 +1,15 @@
 import "./Form.scss";
 import React, {  useState } from "react";
 import {  FormProvider } from "../../context/FormContext";
-import PageFour from "../../pages/PageFour/PageFour";
+import PageFour from "../PageFour/PageFour";
 import LandingPage from "../../pages/LandingPage/LandingPage";
 import LogoPage from "../../pages/LogoPage/LogoPage";
-import Management from "../../pages/Management/Management";
-
-
+import Module from "../../pages/Module/Module";
 
 
 const MultiPageForm = () => {
 	const [page, setPage] = useState(0);
-	const pages = [<LandingPage />, <LogoPage />, <Management />, <PageFour />];
+	const pages = [<LandingPage />, <LogoPage />, <Module />, <PageFour />];
 
 	const goBack = () => {
 		if (page > 0) {

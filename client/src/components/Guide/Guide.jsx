@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
-import { FormDataContext } from "../../context/FormContext";
+import React from "react";
 
-export default function PageThree() {
-    const [formData, setFormData] = useContext(FormDataContext);
 
-	return (
-		<div>
+export default function Guide() {
+
+return (
+		<div className="guide">
 			<h1 className="title">Management 101</h1>
 			<p className="text">
 				As a small business owner, being a great manager is crucial for the
