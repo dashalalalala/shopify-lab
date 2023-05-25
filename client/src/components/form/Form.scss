@@ -1,16 +1,15 @@
 .form {
 	display: flex;
 	position: absolute;
-	padding: 2rem 3rem;
+	padding: 2rem 2rem;
 	margin: 12rem 6rem;
 	background-color: white;
 	flex-direction: column;
 	font-family: sans-serif;
-	max-width: 58%;
+	width: 60%;
 	height: 36rem;
 	border-radius: 100px;
 	background-color: #1d1e1e;
-	// background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
 	align-items: center;
 	justify-content: center;
 	// gap: 2rem;

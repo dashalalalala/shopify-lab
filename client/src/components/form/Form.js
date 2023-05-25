@@ -5,95 +5,9 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import GuideData from "../guideData/GuideData";
 import Navigation from "../navigation/Navigation";
+import LogoUpload from "../logoUpload/LogoUpload";
+import Intro from "../intro/Intro";
 import { useParams } from "react-router-dom";
-
-const Intro = () => {
-	const [formData, setFormData] = useContext(FormDataContext);
-
-	return (
-		<div>
-			<h1 className="title">Welcome to Shopify Interactive Learning Lab!</h1>
-			<p className="text">
-				Shopify Interactive Learning Forum is the place where you can
-				experiment, make mistakes, and learn in a risk-free, simulated
-				environment. Whether you're new to the digital commerce world, planning
-				to scale your existing venture, or seeking insights to optimize your
-				operations, our forum provides you with the necessary tools and guidance
-				to navigate the eCommerce landscape confidently.
-			</p>
-			<p className="text">
-				{" "}
-				Through practical scenarios, we'll help you learn about key aspects like
-				effective cash flow management, comprehensive market research, building
-				a robust online presence, delivering excellent customer service, and
-				handling growth challenges. We're here to help turn your entrepreneurial
-				vision into a successful reality.
-			</p>
-		</div>
-	);
-};
-
-const LogoUpload = () => {
-	const [formData, setFormData] = useContext(FormDataContext);
-	const [selectedFile, setSelectedFile] = useState(null); // will be Shopify logo by default
-
-	const fileSelectedHandler = (event) => {
-		setSelectedFile(event.target.files[0]);
-	};
-
-	const fileUploadHandler = async () => {
-		const formDataObj = new FormData();
-		formDataObj.append("file", selectedFile);
-
-		// upload the formDataObj to server using axios
-		const response = await axios.post(
-			"http://localhost:8080/upload",
-			formDataObj
-		);
-
-		// update the context with the new logo URL
-		setFormData({
-			...formData,
-			logo: response.data.logoUrl,
-		});
-
-		//PUT request to update logoUrl on the server
-		try {
-			const updateResponse = await axios.put(
-				`http://localhost:8080/user/bde3782d-b441-4e63-b0ae-66e7a6e4a882/logo`,
-				{ logoUrl: response.data.logoUrl }
-			);
-			console.log(updateResponse.data);
-		} catch (error) {
-			console.error(error);
-		}
-	};
-
-	return (
-		<div>
-			<h1 className="title">Let's Get Started!</h1>
-			<p className="text">
-				Now that you are done with all the hard parts of setting up your
-				business, let's start with the fun ones! First, we want you to create
-				your logo. If you already have one, just upload it below, if you dont
-				have one you can use our{" "}
-				<a
-					className="link"
-					href="https://www.shopify.com/tools/logo-maker"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					free logo maker tool
-				</a>
-				: :
-			</p>
-			<input type="file" onChange={fileSelectedHandler} />
-			<button className="button" onClick={fileUploadHandler}>
-				Upload
-			</button>
-		</div>
-	);
-};
 
 const Quiz = () => {
 	const [answer, setAnswer] = useState("");
@@ -199,25 +113,27 @@ const MultiPageForm = () => {
 	};
 
 	return (
-		<div className="form">
-			{/* <FormProvider> */}
-			{pages[page]}
-			{page > 0 && (
-				<button className="button" onClick={goBack}>
-					Go Back
-				</button>
-			)}
-			{page < pages.length - 1 ? (
-				<button className="button" onClick={goNext}>
-					Next
-				</button>
-			) : (
-				<button className="button" onClick={handleSubmit}>
-					Submit
-				</button>
-			)}
-			{/* </FormProvider> */}
-		</div>
+		<>
+			<div className="form">
+				{/* <FormProvider> */}
+				{pages[page]}
+				{page > 0 && (
+					<button className="button" onClick={goBack}>
+						Go Back
+					</button>
+				)}
+				{page < pages.length - 1 ? (
+					<button className="button" onClick={goNext}>
+						Next
+					</button>
+				) : (
+					<button className="button" onClick={handleSubmit}>
+						Submit
+					</button>
+				)}
+				{/* </FormProvider> */}
+			</div>
+		</>
 	);
 };
 
