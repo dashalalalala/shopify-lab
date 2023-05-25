@@ -14,6 +14,14 @@ router.get("/", (req, res, next) => {
   res.json(readQuestions());
 });
 
+router.get("/questions/:id", (req, res, next) => {
+  const getModule = readQuestions();
+
+  const singleModule = getModule.find((list) => 
+  list.id === req.params.id)
+  res.send(singleModule);
+})
+
 router.post("/", (req, res, next) => {
   const newAnswer = {
     id: uniqid(),

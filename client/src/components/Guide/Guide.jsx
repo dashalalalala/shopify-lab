@@ -1,7 +1,12 @@
-import React from "react";
+
+import { useNavigate } from "react-router-dom";
+import axios from 'axios';
+
 
 
 export default function Guide() {
+	const navigate = useNavigate();
+	;
 
 return (
 		<div className="guide">
@@ -36,6 +41,7 @@ return (
 				Remember, continuous learning and improvement are key to being a great
 				manager.
 			</p>
+			<button className="button" onClick={() => navigate('/quiz')}>Next</button>
 		</div>
 	);
 }

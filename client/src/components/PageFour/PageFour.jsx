@@ -107,7 +107,7 @@ console.log(formData);
     };
 
     return (
-        <div>
+        <div className="guide">
         {showScore ? (
             <div className="title">
             You scored {score} out of {questions.length}
@@ -136,7 +136,7 @@ console.log(formData);
                     />
                     <label className="text" htmlFor="answer">{answerOption.answerText}</label>
                     {errors.answer && <p>{errors.answer}</p>}
-                    <button onSubmit={handleAnswerOptionClick}>SUBMIT</button>
+                    <button className="button">SUBMIT</button>
                     </form>
                 </>
                 ))}

@@ -16,7 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/question", questionRoutes);
+app.use("/", questionRoutes);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
