@@ -1,0 +1,29 @@
+[
+	{
+		"id": "bde3782d-b441-4e63-b0ae-66e7a6e4a882",
+		"userName": "John Doe",
+		"logoUrl": "http://localhost:8080/shopify-logo-2018.svg",
+		"quizResponses": [
+			{ "id": "1", "attempts": 1 },
+			{ "id": "2", "attempts": 2 }
+		]
+	},
+	{
+		"id": "3a221dc6-1258-4cb2-81a3-6de99ef8d52c",
+		"userName": "Jane Smith",
+		"logoUrl": "http://localhost:8080/shopify-logo-2018.svg",
+		"quizResponses": [
+			{ "id": "3", "attempts": 1 },
+			{ "id": "4", "attempts": 3 }
+		]
+	},
+	{
+		"id": "8b8e36c9-6f18-4b85-a10f-2e6f0c47a717",
+		"userName": "Robert Johnson",
+		"logoUrl": "http://localhost:8080/shopify-logo-2018.svg",
+		"quizResponses": [
+			{ "id": "5", "attempts": 2 },
+			{ "id": "6", "attempts": 4 }
+		]
+	}
+]

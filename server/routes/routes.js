@@ -5,27 +5,27 @@ const fs = require("fs");
 const uniqid = require("uniqid");
 
 function readQuestions() {
-  const questionsJSON = fs.readFileSync("./data/questions.json");
-  const parseQuestions = JSON.parse(questionsJSON);
-  return parseQuestions;
+	const questionsJSON = fs.readFileSync("./data/questions.json");
+	const parseQuestions = JSON.parse(questionsJSON);
+	return parseQuestions;
 }
 
 router.get("/", (req, res, next) => {
-  res.json(readQuestions());
+	res.json(readQuestions());
 });
 
 router.post("/", (req, res, next) => {
-  const newAnswer = {
-    id: uniqid(),
-    question: req.body.questionText,
-    answer: req.body.answerText,
-    attempts: req.body.attempts,
-  };
+	const newAnswer = {
+		id: uniqid(),
+		question: req.body.questionText,
+		answer: req.body.answerText,
+		attempts: req.body.attempts,
+	};
 
-  const answer = readQuestions();
-  answer.push(newAnswer);
-  fs.writeFileSync("./data/questions.json", JSON.stringify(answer));
-  res.status(200).json(newAnswer);
+	const answer = readQuestions();
+	answer.push(newAnswer);
+	fs.writeFileSync("./data/questions.json", JSON.stringify(answer));
+	res.status(200).json(newAnswer);
 });
 
 module.exports = router;

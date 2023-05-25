@@ -2,6 +2,7 @@ import "./Form.scss";
 import React, { useContext, useState } from "react";
 import { FormDataContext, FormProvider } from "../../context/FormContext";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const PageOne = () => {
 	const [formData, setFormData] = useContext(FormDataContext);
@@ -31,17 +32,38 @@ const PageOne = () => {
 
 const PageTwo = () => {
 	const [formData, setFormData] = useContext(FormDataContext);
-
 	const [selectedFile, setSelectedFile] = useState(null); // will be Shopify logo by default
 
 	const fileSelectedHandler = (event) => {
 		setSelectedFile(event.target.files[0]);
 	};
 
-	const fileUploadHandler = () => {
-		const formData = new FormData();
-		formData.append("file", selectedFile, selectedFile.name);
-		//upload the formData to server using axios
+	const fileUploadHandler = async () => {
+		const formDataObj = new FormData();
+		formDataObj.append("file", selectedFile);
+
+		// upload the formDataObj to server using axios
+		const response = await axios.post(
+			"http://localhost:8080/upload",
+			formDataObj
+		);
+
+		// update the context with the new logo URL
+		setFormData({
+			...formData,
+			logo: response.data.logoUrl,
+		});
+
+		//PUT request to update logoUrl on the server
+		try {
+			const updateResponse = await axios.put(
+				`http://localhost:8080/user/bde3782d-b441-4e63-b0ae-66e7a6e4a882/logo`,
+				{ logoUrl: response.data.logoUrl }
+			);
+			console.log(updateResponse.data);
+		} catch (error) {
+			console.error(error);
+		}
 	};
 
 	return (
@@ -204,23 +226,23 @@ const MultiPageForm = () => {
 
 	return (
 		<div className="form">
-			<FormProvider>
-				{pages[page]}
-				{page > 0 && (
-					<button className="button" onClick={goBack}>
-						Go Back
-					</button>
-				)}
-				{page < pages.length - 1 ? (
-					<button className="button" onClick={goNext}>
-						Next
-					</button>
-				) : (
-					<button className="button" onClick={handleSubmit}>
-						Submit
-					</button>
-				)}
-			</FormProvider>
+			{/* <FormProvider> */}
+			{pages[page]}
+			{page > 0 && (
+				<button className="button" onClick={goBack}>
+					Go Back
+				</button>
+			)}
+			{page < pages.length - 1 ? (
+				<button className="button" onClick={goNext}>
+					Next
+				</button>
+			) : (
+				<button className="button" onClick={handleSubmit}>
+					Submit
+				</button>
+			)}
+			{/* </FormProvider> */}
 		</div>
 	);
 };
