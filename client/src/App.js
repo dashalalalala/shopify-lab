@@ -9,7 +9,10 @@ function App() {
 			<div className="App">
 				<BrowserRouter>
 					<Routes>
-						<Route path="/" element={<Learn />} />
+						<Route
+							path="/user/bde3782d-b441-4e63-b0ae-66e7a6e4a882"
+							element={<Learn />}
+						/>
 					</Routes>
 				</BrowserRouter>
 			</div>
