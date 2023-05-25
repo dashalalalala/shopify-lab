@@ -2,6 +2,8 @@ import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Learn from "./pages/learn/Learn";
+import Form from "./components/form/Form";
+import GuideData from "./components/guideData/GuideData";
 
 function App() {
 	return (
@@ -9,10 +11,10 @@ function App() {
 			<div className="App">
 				<BrowserRouter>
 					<Routes>
-						<Route
-							path="/user/bde3782d-b441-4e63-b0ae-66e7a6e4a882"
-							element={<Learn />}
-						/>
+						<Route path="/" element={<Learn />} />
+						<Route path="/guide" element={<Form />}>
+							<Route path=":moduleId" element={<GuideData />} />
+						</Route>
 					</Routes>
 				</BrowserRouter>
 			</div>

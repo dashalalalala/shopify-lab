@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.use("/question", questionRoutes);
+app.use("/guide", questionRoutes);
 app.use("/user", userRoute);
 
 // set port, listen for requests

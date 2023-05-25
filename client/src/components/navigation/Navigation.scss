@@ -1,0 +1,18 @@
+.navigation-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.navigation-text {
+	padding: 2rem 3rem;
+	font-weight: bold;
+	background: #79dfff;
+	border-radius: 4px;
+
+	&:hover {
+		background: #4bfe85;
+    cursor: pointer;
+	}
+}
