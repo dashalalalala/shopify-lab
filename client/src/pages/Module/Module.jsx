@@ -3,42 +3,52 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Guide from '../../components/Guide/Guide';
 import { BASE_API_URL } from "../../helper";
 import axios from 'axios';
+import PageFour from "../../components/PageFour/PageFour";
 
 
 
 export default function Module() {
 
-  const modules = ['Cash Flow 101', 'Choosing Team 101', 'Customer Retention 101', 'Product Development 101' ];
+  // const { id } = useParams();
+  // const modules = ['Cash Flow 101', 'Choosing Team 101', 'Customer Retention 101', 'Product Development 101' ];
+  const [loading, setLoading] = useState(true)
   const navigate = useNavigate();
   const [questionData, setQuestionData] =useState(null);
-  const { id } = useParams();
-
 
 
 	useEffect(() => {
-		axios.get(`${BASE_API_URL}/questions/${id}`).then((res)=> {
+		axios.get(`${BASE_API_URL}`).then((res)=> {
 			setQuestionData(res.data);
+      setLoading(false);
 		})
 		.catch((error) => {
             console.error(error);
           });
-	},[id]);
+	},[]);
 
 	console.log(questionData);
-  console.log(id);
+
+  if (loading) {
+    return (
+      <div >
+        <h1>Loading.....</h1>
+      </div>
+    );
+  }
+
+  console.log(questionData);
 
   return (
     <>
     <div>
       <h1 className='title'>Select Your Module</h1>
-      <div onClick={() => navigate(`/questions/${id}`)}>
-        {modules.map((module, index) => (
-          <p className='text' key={index}>{module}</p>
-        ))}
+       {questionData.map((data, index) => (
+        <div onClick={() => navigate(`${data.id}`)}>
+        <p id={data.id} className="text">{data.name}</p>
+        </div>
+       ))}
       </div>
-  
-      </div>
-    
+      <PageFour questions={questionData} />
     </>
   )
 }

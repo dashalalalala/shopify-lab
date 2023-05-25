@@ -14,7 +14,7 @@ router.get("/", (req, res, next) => {
   res.json(readQuestions());
 });
 
-router.get("/questions/:id", (req, res, next) => {
+router.get("/:id", (req, res, next) => {
   const getModule = readQuestions();
 
   const singleModule = getModule.find((list) => 
