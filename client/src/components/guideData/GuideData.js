@@ -1,10 +1,35 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "./GuideData.scss";
 import YouTube from "react-youtube";
 
 function GuideData() {
+	const { moduleId } = useParams();
 	const location = useLocation();
-	const guide = location.state.guide; // Access the guide data
+	const [guide, setGuide] = useState(
+		location.state ? location.state.guide : null
+	);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await axios.get(
+					`http://localhost:8080/guide/${moduleId}`
+				);
+				setGuide(response.data);
+			} catch (error) {
+				console.error("Failed to fetch data: ", error);
+			}
+		};
+
+		// Fetch data every time the moduleId changes
+		fetchData();
+	}, [moduleId]); // Only dependent on moduleId
+
+	if (!guide) {
+		return <div>Loading...</div>;
+	}
 
 	const opts = {
 		height: "300",
@@ -16,7 +41,6 @@ function GuideData() {
 
 	return (
 		<div>
-			{/* Checking if the guide.description is a Youtube URL */}
 			{guide.description.includes("https://youtu.be/") ? (
 				<div>
 					<h2 className="title">{guide.name}</h2>
