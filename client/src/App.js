@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Learn from "./pages/learn/Learn";
 import Form from "./components/form/Form";
 import GuideData from "./components/guideData/GuideData";
+import StoreFront from "./components/storeFront/StoreFront";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 						</Route>
 					</Routes>
 				</BrowserRouter>
+				<StoreFront />
 			</div>
 		</ChakraProvider>
 	);

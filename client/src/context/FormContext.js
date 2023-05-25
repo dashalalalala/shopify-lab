@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-
 export const FormDataContext = createContext();
 
 export const FormProvider = ({ children }) => {
@@ -10,8 +9,10 @@ export const FormProvider = ({ children }) => {
 	});
 
 	return (
-		<FormDataContext.Provider value={[formData, setFormData]}>
-			{children}
-		</FormDataContext.Provider>
+		<>
+			<FormDataContext.Provider value={[formData, setFormData]}>
+				{children}
+			</FormDataContext.Provider>
+		</>
 	);
 };
