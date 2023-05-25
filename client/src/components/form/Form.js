@@ -3,8 +3,11 @@ import React, { useContext, useState } from "react";
 import { FormDataContext, FormProvider } from "../../context/FormContext";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import GuideData from "../guideData/GuideData";
+import Navigation from "../navigation/Navigation";
+import { useParams } from "react-router-dom";
 
-const PageOne = () => {
+const Intro = () => {
 	const [formData, setFormData] = useContext(FormDataContext);
 
 	return (
@@ -30,7 +33,7 @@ const PageOne = () => {
 	);
 };
 
-const PageTwo = () => {
+const LogoUpload = () => {
 	const [formData, setFormData] = useContext(FormDataContext);
 	const [selectedFile, setSelectedFile] = useState(null); // will be Shopify logo by default
 
@@ -74,11 +77,15 @@ const PageTwo = () => {
 				business, let's start with the fun ones! First, we want you to create
 				your logo. If you already have one, just upload it below, if you dont
 				have one you can use our{" "}
-				<Link className="link" to="https://www.shopify.com/tools/logo-maker">
-					{" "}
+				<a
+					className="link"
+					href="https://www.shopify.com/tools/logo-maker"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					free logo maker tool
-				</Link>
-				:
+				</a>
+				: :
 			</p>
 			<input type="file" onChange={fileSelectedHandler} />
 			<button className="button" onClick={fileUploadHandler}>
@@ -88,47 +95,7 @@ const PageTwo = () => {
 	);
 };
 
-const PageThree = () => {
-	const [formData, setFormData] = useContext(FormDataContext);
-
-	return (
-		<div>
-			<h1 className="title">Management 101</h1>
-			<p className="text">
-				As a small business owner, being a great manager is crucial for the
-				success of your business. Here are some important things to note:
-			</p>
-			<p className="text">
-				{" "}
-				1. Effective Communication: Communicate clearly and listen to your
-				employees. <br />
-				2. Lead by Example: Set a positive example through your own actions.
-				<br />
-				3. Delegate and Empower: Delegate tasks and empower employees to make
-				decisions. <br />
-				4. Recognize and Reward: Acknowledge and appreciate employees' efforts.
-				<br />
-				5. Foster a Positive Work Culture: Create a supportive and inclusive
-				environment. <br />
-				6. Develop Your Employees: Invest in their growth and provide
-				opportunities. <br />
-				7. Set Clear Goals and Expectations: Define objectives and
-				responsibilities. <br />
-				8. Effective Time Management: Prioritize tasks and support efficiency.
-				<br />
-				9. Adaptability and Flexibility: Embrace change and encourage
-				innovation.
-				<br />
-				10. Trust and Empathy: Build trust and show empathy towards employees.
-				<br />
-				Remember, continuous learning and improvement are key to being a great
-				manager.
-			</p>
-		</div>
-	);
-};
-
-const PageFour = () => {
+const Quiz = () => {
 	const [answer, setAnswer] = useState("");
 
 	const handleOnChange = (event) => {
@@ -205,8 +172,15 @@ const PageFour = () => {
 };
 
 const MultiPageForm = () => {
-	const [page, setPage] = useState(0);
-	const pages = [<PageOne />, <PageTwo />, <PageThree />, <PageFour />];
+	const { moduleId } = useParams();
+	const [page, setPage] = useState(moduleId ? 3 : 0); // If moduleId is present, start from GuideData
+	const pages = [
+		<Intro />,
+		<LogoUpload />,
+		<Navigation />,
+		<GuideData moduleId={moduleId} />, // Pass moduleId as prop to GuideData
+		<Quiz />,
+	];
 
 	const goBack = () => {
 		if (page > 0) {

@@ -1,114 +1,114 @@
 [
-  {
-    "id": "84e96018-4022-434e-80bf-000ce4cd12b8",
-    "name": "Cash Flow 101",
-    "description": "https://youtu.be/6H9d-mb8T0c",
-    "questionText": "You run a Shopify store, and you notice that your cash flow is being negatively impacted due to slow-paying customers. What can you do to improve cash flow in this situation?",
-    "answerOptions": [
-      {
-        "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
-        "answerText": "Implement stricter credit terms and enforce prompt payment policies.",
-        "isCorrect": false
-      },
-      {
-        "id": "091de676-61af-4ee6-90de-3a7a53af7521",
-        "answerText": "Offer incentives for early payment, such as discounts or rewards.",
-        "isCorrect": false
-      },
-      {
-        "id": "66b7d3c7-4023-47f1-a02c-520c9ca187a6",
-        "answerText": "Follow up with customers to ensure timely payment and consider implementing a collections process.",
-        "isCorrect": false
-      },
-      {
-        "id": "ade82e25-6c87-4403-ba35-47bdff93a51c",
-        "answerText": "All of the above",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "id": "c05b9a93-8682-4ab6-aff2-92ebb4bbfc14",
-    "name": "Choosing Team 101",
-    "description": "Choosing the right employee as a small business owner involves several key steps like defining job requirements, advertising the position widely, and screen resumes and applications. It is importnant to conduct structured interviews, assess candidates' skills and competencies, and check references. Additionally, evaluating cultural fit and long-term potential, considering both technical qualifications and alignment with company values. You must trust your instincts and make a job offer with clear terms and continuously learn and receive feedback from your team will help refine your hiring process.",
-    "questionText": "You are a small business owner looking to hire a new employee for a customer service role. After conducting interviews, you have identified three candidates who possess the necessary skills and qualifications. However, one candidate demonstrates a strong alignment with your company values and exhibits excellent interpersonal skills. What should be your next course of action in selecting the right employee?",
-    "answerOptions": [
-      {
-        "id": "ade82e25-6c87-4403-ba35-47bdff93a51c",
-        "answerText": "Extend a job offer to the candidate with the strongest technical qualifications.",
-        "isCorrect": false
-      },
-      {
-        "id": "bf704c76-cba9-462e-ac0a-166315df756c",
-        "answerText": "Conduct reference checks to validate the information provided by the candidates.",
-        "isCorrect": false
-      },
-      {
-        "id": "ec2bec8d-ea2b-458e-9d93-b7f929a8659b",
-        "answerText": "Assess the cultural fit and interpersonal skills of each candidate in a final interview or assessment.",
-        "isCorrect": true
-      },
-      {
-        "id": "7ba106bf-e74a-4c21-b59e-c485a30eea45",
-        "answerText": "Select the candidate who exhibits the highest level of confidence during the interviews.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "id": "25ce5d91-a262-4dcf-bb87-42b87546bcfa",
-    "name": "Customer Retention 101",
-    "description": "https://youtu.be/Y6IBkNNkfJg",
-    "questionText": "You are a business owner facing a decline in customer retention. After analyzing the data, you identify that customers are leaving due to a lack of personalized communication and relevant offers. What would be the most effective approach to solve this issue and improve customer retention?",
-    "answerOptions": [
-      {
-        "id": "921f0e8d-f9d1-44db-b4a2-a2718339891e",
-        "answerText": "Implement a customer relationship management (CRM) system to capture customer preferences and personalize communication.",
-        "isCorrect": true
-      },
-      {
-        "id": "f7b9027b-e407-45fa-98f3-7d8a308ddf7c",
-        "answerText": " Increase the frequency of generic email newsletters to all customers.",
-        "isCorrect": true
-      },
-      {
-        "id": "a2b4ccd4-af48-46e9-9e62-b96731dad728",
-        "answerText": "Advertise on multiple platforms to attract new customers.",
-        "isCorrect": false
-      },
-      {
-        "id": "6ed06295-635f-4fe7-b2b2-83b422c65a1f",
-        "answerText": "Conduct market research to understand customer needs and preferences, but continue running the current offers to see if you can attract more new clients.",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "id": "b6f35f03-7936-409b-bd2a-446bcc5f30e7",
-    "name": "Name: Product Development 101",
-    "description": "https://youtu.be/ZAkzpufECpA",
-    "questionText": "As a business owner, you are in the process of developing a new product, but you encounter a significant delay in the prototyping phase due to technical difficulties. How can you effectively manage this situation and minimize the impact on the overall product development timeline?",
-    "answerOptions": [
-      {
-        "id": "43edd26e-1a76-45da-98f8-684e660a8d5b",
-        "answerText": "Rework the entire product design to avoid technical difficulties.",
-        "isCorrect": false
-      },
-      {
-        "id": "1b964601-a6dd-4fcc-b5f3-1000338c9557",
-        "answerText": "Ignore the technical difficulties and proceed with the prototyping phase as planned.",
-        "isCorrect": true
-      },
-      {
-        "id": "823f6f49-db71-49fe-9918-bde8d8da6a4a",
-        "answerText": "Allocate additional resources to speed up the prototyping process.",
-        "isCorrect": false
-      },
-      {
-        "id": "797ca18c-4fd4-4887-b9f4-3ec098e8121d",
-        "answerText": "Collaborate with technical specialists to overcome technical difficulties.",
-        "isCorrect": true
-      }
-    ]
-  }
+	{
+		"id": "84e96018-4022-434e-80bf-000ce4cd12b8",
+		"name": "Cash Flow 101",
+		"description": "https://youtu.be/6H9d-mb8T0c",
+		"questionText": "You run a Shopify store, and you notice that your cash flow is being negatively impacted due to slow-paying customers. What can you do to improve cash flow in this situation?",
+		"answerOptions": [
+			{
+				"id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
+				"answerText": "Implement stricter credit terms and enforce prompt payment policies.",
+				"isCorrect": false
+			},
+			{
+				"id": "091de676-61af-4ee6-90de-3a7a53af7521",
+				"answerText": "Offer incentives for early payment, such as discounts or rewards.",
+				"isCorrect": false
+			},
+			{
+				"id": "66b7d3c7-4023-47f1-a02c-520c9ca187a6",
+				"answerText": "Follow up with customers to ensure timely payment and consider implementing a collections process.",
+				"isCorrect": false
+			},
+			{
+				"id": "ade82e25-6c87-4403-ba35-47bdff93a51c",
+				"answerText": "All of the above",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"id": "c05b9a93-8682-4ab6-aff2-92ebb4bbfc14",
+		"name": "Choosing Team 101",
+		"description": "Choosing the right employee as a small business owner involves several key steps like defining job requirements, advertising the position widely, and screen resumes and applications. It is importnant to conduct structured interviews, assess candidates' skills and competencies, and check references. Additionally, evaluating cultural fit and long-term potential, considering both technical qualifications and alignment with company values. You must trust your instincts and make a job offer with clear terms and continuously learn and receive feedback from your team will help refine your hiring process.",
+		"questionText": "You are a small business owner looking to hire a new employee for a customer service role. After conducting interviews, you have identified three candidates who possess the necessary skills and qualifications. However, one candidate demonstrates a strong alignment with your company values and exhibits excellent interpersonal skills. What should be your next course of action in selecting the right employee?",
+		"answerOptions": [
+			{
+				"id": "ade82e25-6c87-4403-ba35-47bdff93a51c",
+				"answerText": "Extend a job offer to the candidate with the strongest technical qualifications.",
+				"isCorrect": false
+			},
+			{
+				"id": "bf704c76-cba9-462e-ac0a-166315df756c",
+				"answerText": "Conduct reference checks to validate the information provided by the candidates.",
+				"isCorrect": false
+			},
+			{
+				"id": "ec2bec8d-ea2b-458e-9d93-b7f929a8659b",
+				"answerText": "Assess the cultural fit and interpersonal skills of each candidate in a final interview or assessment.",
+				"isCorrect": true
+			},
+			{
+				"id": "7ba106bf-e74a-4c21-b59e-c485a30eea45",
+				"answerText": "Select the candidate who exhibits the highest level of confidence during the interviews.",
+				"isCorrect": false
+			}
+		]
+	},
+	{
+		"id": "25ce5d91-a262-4dcf-bb87-42b87546bcfa",
+		"name": "Customer Retention 101",
+		"description": "https://youtu.be/Y6IBkNNkfJg",
+		"questionText": "You are a business owner facing a decline in customer retention. After analyzing the data, you identify that customers are leaving due to a lack of personalized communication and relevant offers. What would be the most effective approach to solve this issue and improve customer retention?",
+		"answerOptions": [
+			{
+				"id": "921f0e8d-f9d1-44db-b4a2-a2718339891e",
+				"answerText": "Implement a customer relationship management (CRM) system to capture customer preferences and personalize communication.",
+				"isCorrect": true
+			},
+			{
+				"id": "f7b9027b-e407-45fa-98f3-7d8a308ddf7c",
+				"answerText": " Increase the frequency of generic email newsletters to all customers.",
+				"isCorrect": true
+			},
+			{
+				"id": "a2b4ccd4-af48-46e9-9e62-b96731dad728",
+				"answerText": "Advertise on multiple platforms to attract new customers.",
+				"isCorrect": false
+			},
+			{
+				"id": "6ed06295-635f-4fe7-b2b2-83b422c65a1f",
+				"answerText": "Conduct market research to understand customer needs and preferences, but continue running the current offers to see if you can attract more new clients.",
+				"isCorrect": false
+			}
+		]
+	},
+	{
+		"id": "b6f35f03-7936-409b-bd2a-446bcc5f30e7",
+		"name": "Product Development 101",
+		"description": "https://youtu.be/ZAkzpufECpA",
+		"questionText": "As a business owner, you are in the process of developing a new product, but you encounter a significant delay in the prototyping phase due to technical difficulties. How can you effectively manage this situation and minimize the impact on the overall product development timeline?",
+		"answerOptions": [
+			{
+				"id": "43edd26e-1a76-45da-98f8-684e660a8d5b",
+				"answerText": "Rework the entire product design to avoid technical difficulties.",
+				"isCorrect": false
+			},
+			{
+				"id": "1b964601-a6dd-4fcc-b5f3-1000338c9557",
+				"answerText": "Ignore the technical difficulties and proceed with the prototyping phase as planned.",
+				"isCorrect": true
+			},
+			{
+				"id": "823f6f49-db71-49fe-9918-bde8d8da6a4a",
+				"answerText": "Allocate additional resources to speed up the prototyping process.",
+				"isCorrect": false
+			},
+			{
+				"id": "797ca18c-4fd4-4887-b9f4-3ec098e8121d",
+				"answerText": "Collaborate with technical specialists to overcome technical difficulties.",
+				"isCorrect": true
+			}
+		]
+	}
 ]

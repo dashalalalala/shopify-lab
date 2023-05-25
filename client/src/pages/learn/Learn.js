@@ -36,6 +36,22 @@ function Learn() {
 			});
 	}, []);
 
+	// const [guideData, setGuideData] = useState([]);
+
+	// useEffect(() => {
+	// 	const fetchData = async () => {
+	// 		try {
+	// 			const response = await axios.get("http://localhost:8080/guide");
+	// 			setGuideData(response.data);
+	// 			console.log(response.data);
+	// 		} catch (error) {
+	// 			console.error("Failed to fetch data: ", error);
+	// 		}
+	// 	};
+
+	// 	fetchData();
+	// }, []);
+
 	return (
 		<FormProvider>
 			<div className="learn-page">
