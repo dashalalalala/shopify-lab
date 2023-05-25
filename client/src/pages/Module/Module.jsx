@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Guide from '../../components/Guide/Guide';
 import { BASE_API_URL } from "../../helper";
 import axios from 'axios';
-import PageFour from "../../components/PageFour/PageFour";
 
 
 
@@ -48,7 +47,7 @@ export default function Module() {
         </div>
        ))}
       </div>
-      <PageFour questions={questionData} />
+      
     </>
   )
 }
