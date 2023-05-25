@@ -30,14 +30,13 @@ export default function Guide() {
 		);
 	}
 
-	console.log(description.name);
 
 	return (
 		<>
 		<div className="guide">
 			<h1 className="title">{description.name}</h1>
 			<p className="text">{description.description}</p>
-			<button onClick={() => navigate("/quiz")} className="button">
+			<button onClick={() => navigate(`${description.id}`)} className="button">
 			Next
 			</button>
 		</div>

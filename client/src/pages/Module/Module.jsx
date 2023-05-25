@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { useNavigate, useParams } from 'react-router-dom';
-import Guide from '../../components/Guide/Guide';
+import { useNavigate } from 'react-router-dom';
 import { BASE_API_URL } from "../../helper";
 import axios from 'axios';
 
@@ -8,8 +7,6 @@ import axios from 'axios';
 
 export default function Module() {
 
-  // const { id } = useParams();
-  // const modules = ['Cash Flow 101', 'Choosing Team 101', 'Customer Retention 101', 'Product Development 101' ];
   const [loading, setLoading] = useState(true)
   const navigate = useNavigate();
   const [questionData, setQuestionData] =useState(null);
