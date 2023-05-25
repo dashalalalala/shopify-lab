@@ -1,57 +1,58 @@
+@import "../../styles/variables";
+
 .form {
-	display: flex;
-	position: absolute;
-	padding: 2rem 3rem;
-	margin: 12rem 6rem;
-	background-color: white;
-	flex-direction: column;
-	font-family: sans-serif;
-	max-width: 58%;
-	height: 36rem;
-	border-radius: 100px;
-	background-color: #1d1e1e;
-	// background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
-	align-items: center;
-	justify-content: center;
-	gap: 2rem;
-	box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
-	opacity: 95%;
+  display: flex;
+  position: absolute;
+  padding: 2rem 3rem;
+  margin: 12rem 6rem;
+  background-color: white;
+  flex-direction: column;
+  font-family: sans-serif;
+  max-width: 58%;
+  height: 36rem;
+  border-radius: 100px;
+  background-color: #1d1e1e;
+  // background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+  opacity: 95%;
 }
 
 .title {
-	font-weight: 700;
-	font-size: 2rem;
-	background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  background: $shopify-green;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
 }
 
 .text {
-	color: white;
-	padding: 0.5rem;
+  color: white;
+  padding: 0.5rem;
+  font-weight: 700;
 }
 
 .button {
-	background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
-	color: #1d1e1e;
-	padding: 0.5rem 2rem;
-	margin: 1rem;
-	border-radius: 4px;
-	font-weight: 700;
+  background: $shopify-green;
+  color: #1d1e1e;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+  border-radius: 4px;
+  font-weight: 700;
 }
 
 .link {
-	font-weight: 700;
-	background: linear-gradient(116deg, #79dfff -25%, #4bfe85 32%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	cursor: pointer;
+  font-weight: 700;
+  background: $shopify-green;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
-
-
 .guide {
-	background: #1d1e1e;
+  background: #1d1e1e;
 }
